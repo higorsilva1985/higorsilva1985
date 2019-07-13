@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carteira InPESTments</title>
+  <link rel="icon" href="images/inpestments_favicon.ico">
+  <!-- <link type="text/css" rel="stylesheet" media="screen,projection" href="/css/carteira.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav class="nav-wrapper grey lighten-4">
+      <div>
+        <div class="row container">
+          <div class="col s12 m10 offset-m1">
+            <img src="images/mini-logo.png" class="brand-logo"></img>
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger">
+              <i class="material-icons" style='color:darkgrey'>menu</i></a>
+            <ul class="right hide-on-med-and-down">
+              <li class='bold'><a href="#" style="color: black">Carteira</a></li>
+              <li class='bold'><a href="#" style="color: black">Estudos</a></li>
+              <li class='bold'><a href="http://www.inpestments.com.br" style="color: black">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class='container'>
+      <ul id="nav-mobile" class="sidenav">
+        <!-- <ul class="collapsible collapsible-accordion">
+          <li class="bold"><a class="collapsible-header waves-effect waves-teal">Carteira</a>
+            <div class="collapsible-body">
+              <ul>
+                <li><a href="#">Visão Geral</a></li>
+                <li><a href="#">Dados Básicos</a></li>
+                <li><a href="#">Calculadora IR</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul> -->
+        <li><a href="#">Carteira</a></li>
+        <li><a href="#">Estudos</a></li>
+        <li><a href="http://www.inpestments.com.br">Blog</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="row">
+      <ul class="collapsible">
+        <li>
+          <div class="collapsible-header waves-effect"
+            style='font-weight: bold; font-size: large; vertical-align: middle;'>
+            <div style="margin: auto auto;">Ações</div>
+            <div style="margin: auto auto;">40%</div>
+            <div class="hide-on-med-and-down" style="margin: auto auto">Aplicação: R$ 150000,00</div>
+            <div class="hide-on-med-and-down" style="margin: auto auto">Valor Atual: R$ 170000,00</div>
+            <div style="margin: auto auto;">+$2000,00</div>
+            <!-- <button data-target="modal1" class="btn-small modal-trigger light-blue darken-4">Adic.
+              Ação</button> -->
+
+          </div>
+          <div class="collapsible-body">
+            <table class="highlight centered">
+              <thead>
+                <tr>
+                  <th>Papel</th>
+                  <th class="hide-on-med-and-down">Quantidade</th>
+                  <th class="hide-on-med-and-down">Custo Médio</th>
+                  <th class="hide-on-med-and-down">Investimento</th>
+                  <th>Cotação</th>
+                  <th>Valor Atual</th>
+                  <th>Var.</th>
+                  <th class="hide-on-med-and-down">Var. c/ Div.</th>
+                  <th class="hide-on-med-and-down">Var. Real</th>
+                  <th>
+                    <div class="fixed-action-btn" style="position:relative; right: auto; bottom:auto;padding-top:15px">
+                      <a class="btn-floating btn-small click-to-toggle light-blue darken-4">
+                        <i class="material-icons">mode_edit</i>
+                      </a>
+                      <ul>
+                        <li><a href="#apaga_evento" class="btn-floating modal-trigger btn-small red"><i
+                              class="material-icons">remove_circle_outline</i></a>
+                        </li>
+                        <li><a href="#infos" class="btn-floating modal-trigger btn-small yellow darken-4"><i
+                              class="material-icons">info_outline</i></a>
+                        </li>
+                        <li><a href="#adiciona_evento" class="btn-floating modal-trigger btn-small green"><i
+                              class="material-icons">add_circle_outline</i></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>TRPL4</td>
+                  <td class="hide-on-med-and-down">1000</td>
+                  <td class="hide-on-med-and-down">R$15,00</td>
+                  <td class="hide-on-med-and-down">R$15000,00</td>
+                  <td>R$15,00</td>
+                  <td>R$30000,00</td>
+                  <td>15%</td>
+                  <td class="hide-on-med-and-down">15%</td>
+                  <td class="hide-on-med-and-down">15%</td>
+                </tr>
+                <tr>
+                  <td>FESA4</td>
+                  <td class="hide-on-med-and-down">1000</td>
+                  <td class="hide-on-med-and-down">R$15,00</td>
+                  <td class="hide-on-med-and-down">R$15000,00</td>
+                  <td>R$15,00</td>
+                  <td>R$30000,00</td>
+                  <td>15%</td>
+                  <td class="hide-on-med-and-down">15%</td>
+                  <td class="hide-on-med-and-down">15%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header waves-effect"
+            style='font-weight: bold; font-size: large; vertical-align: middle'>
+            <div style="margin: auto auto;">FIIs</div>
+            <div style="margin: auto auto;">40%</div>
+            <div class="hide-on-med-and-down" style="margin: auto auto">Aplicação: R$ 150000,00</div>
+            <div class="hide-on-med-and-down" style="margin: auto auto">Valor Atual: R$ 170000,00</div>
+            <div style="margin: auto auto;">+$2000,00</div>
+            <!-- <button data-target="modal1" class="btn-small modal-trigger light-blue darken-4">Adic.
+                Ação</button> -->
+
+          </div>
+          <div class="collapsible-body">
+            <table class="highlight centered">
+              <thead>
+                <tr>
+                  <th>Papel</th>
+                  <th class="hide-on-med-and-down">Quantidade</th>
+                  <th class="hide-on-med-and-down">Custo Médio</th>
+                  <th class="hide-on-med-and-down">Investimento</th>
+                  <th>Cotação</th>
+                  <th>Valor Atual</th>
+                  <th>Var.</th>
+                  <th class="hide-on-med-and-down">Var. c/ Div.</th>
+                  <th class="hide-on-med-and-down">Var. Real</th>
+                  <th>
+                    <div class="fixed-action-btn" style="position:relative; right: auto; bottom:auto; padding-top:15px">
+                      <a class="btn-floating btn-small click-to-toggle light-blue darken-4">
+                        <i class="material-icons">mode_edit</i>
+                      </a>
+                      <ul>
+                        <li><a href="#apaga_evento" class="btn-floating modal-trigger btn-small red"><i
+                              class="material-icons">remove_circle_outline</i></a>
+                        </li>
+                        <li><a href="#infos" class="btn-floating modal-trigger btn-small yellow darken-4"><i
+                              class="material-icons">info_outline</i></a>
+                        </li>
+                        <li><a href="#adiciona_evento" class="btn-floating modal-trigger btn-small green"><i
+                              class="material-icons">add_circle_outline</i></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>HGLG11</td>
+                  <td class="hide-on-med-and-down">1000</td>
+                  <td class="hide-on-med-and-down">R$15,00</td>
+                  <td class="hide-on-med-and-down">R$15000,00</td>
+                  <td>R$15,00</td>
+                  <td>R$30000,00</td>
+                  <td>15%</td>
+                  <td class="hide-on-med-and-down">15%</td>
+                  <td class="hide-on-med-and-down">15%</td>
+                </tr>
+                <tr>
+                  <td>ALZR11</td>
+                  <td class="hide-on-med-and-down">1000</td>
+                  <td class="hide-on-med-and-down">R$15,00</td>
+                  <td class="hide-on-med-and-down">R$15000,00</td>
+                  <td>R$15,00</td>
+                  <td>R$30000,00</td>
+                  <td>15%</td>
+                  <td class="hide-on-med-and-down">15%</td>
+                  <td class="hide-on-med-and-down">15%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header waves-effect">Renda Fixa</div>
+          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+        </li>
+        <li>
+          <div class="collapsible-header waves-effect">Fundos de Investimentos</div>
+          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+        </li>
+      </ul>
+      <div id="apaga_evento" class="modal">
+        <div class="modal-content">
+          <h4>Apaga Evento</h4>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Salvar</a>
+        </div>
+      </div>
+      <div id="infos" class="modal">
+        <div class="modal-content">
+          <h4>Infomações Complementares</h4>
+          <p>A bunch of text</p>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Salvar</a>
+        </div>
+      </div>
+      <div id="adiciona_evento" class="modal">
+        <div class="modal-content">
+          <h5>Adiciona Evento</h5>
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s6">
+                <input id="tipo_inv" disabled value="Ação" type="text" class="validate">
+                <label for="tipo_inv">Tipo</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="codigo" type="text" class="validate">
+                <label for="codigo">Código</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="inst_finan" type="text" class="validate">
+                <label for="inst_finan">Instituição</label>
+              </div>
+              <div class="input-field col s6">
+                <select>
+                  <option value="" disabled selected></option>
+                  <option value="Compra">Compra</option>
+                  <option value="Venda">Venda</option>
+                  <option value="Rendimento">Rendimento</option>
+                </select>
+                <label>Tipo Operação</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="qtd" type="number" class="validate">
+                <label for="qtd">Quantidade</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="valor_op" type="number" class="validate">
+                <label for="valor_op">Valor</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="data_op" type="date" class="validate">
+                <label for="data_op">Data</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="corretagem" type="number" class="validate">
+                <label for="corretagem">Corretagem</label>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Salvar</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+
+  </footer>
+
+  <!-- SCRIPTS -->
+  <!-- <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.sidenav').sidenav();
+    });
+    $(document).ready(function () {
+      $('.collapsible').collapsible();
+    });
+    $(document).ready(function () {
+      $('.modal').modal();
+    });
+    $(document).ready(function () {
+      $('.fixed-action-btn').floatingActionButton({
+        direction: 'bottom',
+        hoverEnabled: false
+      });
+    });
+    $(document).ready(function () {
+      $('select').formSelect();
+    });
+  </script>
+
+</body>
+
+</html>
